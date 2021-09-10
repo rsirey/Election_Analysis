@@ -14,40 +14,60 @@ Calculate the percentage of votes each candidate wone.
 
 Determine the winner of the election based on the popular vote.
 
+Determine the voter turnout for each county.
+
+Calculate the percentage from each county out of the total count.
+
+Determine the count with the highest voter turnout.
+
+
 ## Resources
 
--Data Source: election_results.csv
+Data Source: election_results.csv
 
--Software: Python 3.7.6, Visual Studio Code 1.60.0
+Software: Python 3.7.6, Visual Studio Code 1.60.0
 
 
 ## Summary of Findings
 
-The analysis of the election shows that:
+The county analysis of the election shows that:
 
--There were 369,711 votes cast in the election.
+* There were 369,711 votes cast in the election.
+* There were three counties feeding votes into the election:
+	* Jefferson
+	* Denver
+	* Arapahoe
+Their breakdown of voter turnout and contribution percentage is shown below:
 
--The candidates were:
+![county_results.png](Resources/county_results.png)
 
-	-Diana DeGette
+The county with the largest number of contributing votes is Denver.
+
+The candidate analysis of the election shows that:
+
+* There were 369,711 votes cast in the election.
+
+* The candidates were:
+
+	* Diana DeGette
 	
-	-Charles Casper
+	* Charles Casper
 	
-	-Raymon Anthony Doane
+	* Raymon Anthony Doane
 	
--The candidate results were:
+The breakdown of votes and percentage of votes recieved is shown below:
 
-	-Diana DeGette received 73.8% of the vote with 272,892 votes.
-	
-	-Charles Casper received 23.0% of the vote with 85,213 votes.
-	
-	-Raymon Anthony Doane received 3.1% of the vote with 11,606 votes.
-	
--The winner of the election was:
+![candidate_results.png](Resources/candidate_results.png)
 
-	-Diana DeGette who received 73.8% of the vote with 272,892 votes.
+The winner of the election was Diana DeGette who received 73.8% of the vote with 272,892 votes.
 
-## Challenge Overview
+## Election Audit Summary
 
+This Election Audit can be applied to any election held with the simple replacement of data in the same format for any number of counties or candidates.
 
-## Challenge Summary 
+The code can also be altered to suit any geographical nominal data (zip codes, cities, states). If zip code data were available, it could give more insight into local election turnouts and determine which areas are underrepresented in comparison with voter turnout.
+
+The script could also be edited to include an if statement to show if certain regions are below a certain voter turnout percentage in comparison with eligible vote population (if the data be available) to target the areas with low voter turn out. 
+
+If eligible voter population were to be available, the additional code could be added.
+
